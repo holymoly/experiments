@@ -7,7 +7,7 @@
       {
         "name": "core",
         "sshAuthorizedKeys": [
-          "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCerzGGXd3Dg0Y4KDu8eIoGAGk+GdHJGWB6ye4p0AVBbWPbeSDS9yGh9iH3uA44YFhgqdkibHwDg3h/prXN//pcXkOlH53fotglMWY2OefF37gp/Q6FgNZ4sCeGjPU5Wtu2pzN+xbItolRAYmk+ePlezoawnRQdZeQnNjSEvdRE7dppS1WpvJXWx7Uhk5088iZsjrcfMIa2ZKz76jod5CvlDwAb1EkJGmojB5y/DWZI4s//mmgjW/XSSzncxUC7pbrrQ4MLGlz86a0VBzyz3B776p8NFf2yGr3FkVf1zpA00RJ8Oka7whJqXyKkTFmMstQg1ReeFbla68Rlp+TlIsKNx8BWXCDTqEO6jOhRhkhCHRWnGthpZa6YGX67ala4NHLyR7TZJJX95nff0EPd2uB5lr19vjB65+bd/tmkcAK7VT3SMxO9jgngYl4+8g06uUI9OZmpH49bHeoHdmybKeu+AtIaImtFZFnQgXau++Nzq730jenTinR+a5viZ+iP7M8= leonardo@devops.cr"
+          "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDRtZPvgplu1aPhl4fGc/D+qCYl+MgCQznqZ2u0zjo0EGvv5ByWUQkZo3fMH1iDbjAX961DaqnFoZCm9Tk1s/kyJ/Y2PgV84vm0f0Q++Ma05LdnBg6Kj+X5mUC65UAQnKBznkXEyI0KRmaGoKarJ9fk7LbKkcW6E910CrLXma01bquuW+lO++qa2V0Q8BLACLLXA2u4EpC875BbFkYpgVrKho/PYqry0Crr/CDJNsrt9nH0cCMnitqEk5IIxoVQkm50mppblFsSOcZzktLcre/d6bEVjtN3WuoADyofS4o/M4MAek/QEQP6xKiLgow6UhmJ7L52nzvh8bC5GkB5pvebpG8ivFRbMDcpyNL0RG3Z2c2mpcmKlvt+PNY65AJaoWAXB4W2h0688JEa/oWdxgsQWri+yIv84JBRCUk1uzuXngb6Xitje5hWO0XhDEti/awPuysn9RLGneuS0+Fct2qOxXm5Ru+bXHBl9D/cj717rGRqJOX0KUMTp/qpvrALMrXjSMeIvZ416KzDhme3RVoEepiJYp5eIiUZCJ9uvBt/oa0DM8ztvaavLz86k7feszQD6sN7SALl/xuEEbODWZEKMS80tQCFQsBl4s3Hq6VA5GkEmVzytWYh5VVAklvKCN3hS3UBvVv7wiPab397X6as43Koqs2aJvOkbezxOeqzXw== holymoly"
         ]
       }
     ]
