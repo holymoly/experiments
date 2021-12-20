@@ -1,0 +1,24 @@
+{
+  "ignition": {
+    "version": "3.0.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "name": "core",
+        "sshAuthorizedKeys": [
+          "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDRtZPvgplu1aPhl4fGc/D+qCYl+MgCQznqZ2u0zjo0EGvv5ByWUQkZo3fMH1iDbjAX961DaqnFoZCm9Tk1s/kyJ/Y2PgV84vm0f0Q++Ma05LdnBg6Kj+X5mUC65UAQnKBznkXEyI0KRmaGoKarJ9fk7LbKkcW6E910CrLXma01bquuW+lO++qa2V0Q8BLACLLXA2u4EpC875BbFkYpgVrKho/PYqry0Crr/CDJNsrt9nH0cCMnitqEk5IIxoVQkm50mppblFsSOcZzktLcre/d6bEVjtN3WuoADyofS4o/M4MAek/QEQP6xKiLgow6UhmJ7L52nzvh8bC5GkB5pvebpG8ivFRbMDcpyNL0RG3Z2c2mpcmKlvt+PNY65AJaoWAXB4W2h0688JEa/oWdxgsQWri+yIv84JBRCUk1uzuXngb6Xitje5hWO0XhDEti/awPuysn9RLGneuS0+Fct2qOxXm5Ru+bXHBl9D/cj717rGRqJOX0KUMTp/qpvrALMrXjSMeIvZ416KzDhme3RVoEepiJYp5eIiUZCJ9uvBt/oa0DM8ztvaavLz86k7feszQD6sN7SALl/xuEEbODWZEKMS80tQCFQsBl4s3Hq6VA5GkEmVzytWYh5VVAklvKCN3hS3UBvVv7wiPab397X6as43Koqs2aJvOkbezxOeqzXw== holymoly"
+        ]
+      }
+    ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "name": "netbootxyz.service",
+        "enabled": true,
+        "contents": "[Service]\nTimeoutStartSec=0\nExecStartPre=-/usr/bin/docker kill netbootxyz1\nExecStartPre=-/usr/bin/docker rm netbootxyz1\nExecStartPre=/usr/bin/docker pull ghcr.io/netbootxyz/netbootxyz\nExecStart=/usr/bin/docker run --name netbootxyz1 busybox ghcr.io/netbootxyz/netbootxyz -p3000:3000 -p69:69 -p8080:80 --restart unless-stopped\n[Install]\nWantedBy=multi-user.target"
+      }
+    ]
+  }
+}
