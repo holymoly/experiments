@@ -17,7 +17,7 @@
       {
         "name": "netbootxyz.service",
         "enabled": true,
-        "contents": "[Service]\nTimeoutStartSec=0\nExecStartPre=-/usr/bin/docker kill netbootxyz1\nExecStartPre=-/usr/bin/docker rm netbootxyz1\nExecStartPre=/usr/bin/docker pull ghcr.io/netbootxyz/netbootxyz\nExecStart=/usr/bin/docker run --name netbootxyz1 ghcr.io/netbootxyz/netbootxyz -p3000:3000 -p69:69 -p8080:80 --restart unless-stopped\n[Install]\nWantedBy=multi-user.target"
+        "contents": "[Service]\nTimeoutStartSec=0\nExecStartPre=-/usr/bin/docker kill netbootxyz1\nExecStartPre=-/usr/bin/docker rm netbootxyz1\nExecStartPre=/usr/bin/docker pull ghcr.io/netbootxyz/netbootxyz\nExecStart=/usr/bin/docker run --name netbootxyz1 -p 3000:3000 -p 69:69 -p 8080:80 --restart unless-stopped ghcr.io/netbootxyz/netbootxyz\n[Install]\nWantedBy=multi-user.target"
       }
     ]
   }
